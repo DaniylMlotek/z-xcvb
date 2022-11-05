@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.back-video{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.heart{
+    animation: heartbeat 1s infinite;
+    background-color: red;
+    display: inline-block;
+    height: 50px;
+    margin: 0 10px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+
+    position: absolute;
+    left: 47%;
+    top: 45%;
+    width: 50px;
+}
+
+.heart::before,
+.heart::after{
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+}
+
+.heart::before{
+    top: -25px;
+    left: 0;
+}
+
+.heart::after{
+    top: 0;
+    left: 25px;
+}
+
+@keyframes heartbeat{
+    0%{
+        transform: scale( 1 )
+        rotate(-45deg);
+    }
+    20%{
+        transform: scale( 1.25 )
+        rotate(-45deg);
+    }
+    40%{
+        transform: scale( 1.5 )
+        rotate(-45deg);
+    }
+}
+
+/* @media screen and (min-width: 390px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .back-video{
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        width: 150%;
+    }
+    
+    .heart{
+        animation: heartbeat 1s infinite;
+        background-color: red;
+        display: inline-block;
+        height: 30px;
+        margin: 0 10px;
+        position: relative;
+      
+        transform: rotate(-45deg);
+    
+        position: absolute;
+        left: 69%;
+        top: 26%;
+        width: 30px;
+    }
+    
+    .heart::before,
+    .heart::after{
+        content: "";
+        background-color: red;
+        border-radius: 50%;
+        height: 30px;
+        position: absolute;
+        width: 30px;
+    }
+    
+    .heart::before{
+        top: -15px;
+        left: 0;
+    }
+    
+    .heart::after{
+        top: 0;
+        left: 15px;
+    }
+    
+    @keyframes heartbeat{
+        0%{
+            transform: scale( 1 )
+            rotate(-45deg);
+        }
+        20%{
+            transform: scale( 1.25 )
+            rotate(-45deg);
+        }
+        40%{
+            transform: scale( 1.5 )
+            rotate(-45deg);
+        }
+    }
+
+
+
+    .lubimaya {
+        display: flex;
+        justify-content: space-between;
+        text-shadow: 1px 1px white, 2px 2px #777;
+        color: #333;
+        transition: all 1s;
+
+    }
+
+    .lubimaya .danya {
+        color: lightblue;
+
+    }
+
+    .lubimaya .nina {
+        color: lightcoral;
+
+    }
+
+
+   .danya{
+    margin-top: 200px;
+    margin-left: 150px;
+   }
+
+   .nina{
+    margin-top: 200px;
+    margin-left: 190px;
+   }
+
+
+} */
